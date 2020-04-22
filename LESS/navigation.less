@@ -1,0 +1,45 @@
+// Navigation Styles here
+header{
+    display: flex;     
+
+    h1{
+        width: 48%;
+        padding-left: 1%;
+    }
+
+    .header{
+        .displayflex(center, row, space-between)
+    }
+        a{
+            color: @font-color;
+            text-decoration: none;
+        }
+
+        nav{
+            width:48%;
+            .displayflex(center, row, space-around)
+        }
+
+}
+
+.yellowbus{
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+.welcome{
+    padding-top: 1%;
+
+    p{
+        padding-bottom: 4%;
+    }
+}
+
+@media @mobile {
+    header{
+        .displayflex(center, column , space-around)
+    } 
+}
