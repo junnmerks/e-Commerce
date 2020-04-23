@@ -224,7 +224,7 @@ header .header a {
   border-radius: 20rem;
 }
 .welcome {
-  padding-top: 1%;
+  padding: 2% 0%;
   text-align: center;
   background-color: #ea6227;
 }
