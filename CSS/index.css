@@ -171,12 +171,15 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.header,
 .online-trade,
 .welcome {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+.header {
+  width: 100%;
+  margin: auto;
 }
 .btn {
   width: 100%;
@@ -197,36 +200,33 @@ header {
   display: flex;
 }
 header .header {
+  background-color: #342EAD;
   display: flex;
-  align-items: center;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
-header .logo {
+header .header .logo {
   width: 48%;
-  padding-left: 1%;
 }
-header a {
-  color: #212529;
-  text-decoration: none;
-  background-color: darkgoldenrod;
-  padding: 2% 10%;
-  border-radius: 20px;
-}
-header nav {
+header .header nav {
   width: 48%;
-  padding-top: 5%;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
 }
-.online-trade img {
-  border-radius: 10px;
+header .header a {
+  text-align: ;
+  color: #212529;
+  text-decoration: none;
+  background-color: #f2a51a;
+  padding: 2% 5%;
+  border-radius: 20rem;
 }
 .welcome {
   padding-top: 1%;
   text-align: center;
+  background-color: #ea6227;
 }
 .welcome p {
   padding-bottom: 4%;
