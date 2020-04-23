@@ -105,7 +105,7 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+  display: flex;
 }
 body {
   line-height: 1;
@@ -167,26 +167,26 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 .header,
 .online-trade,
 .welcome {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 .btn {
   width: 5%;
-  height: 18%;
-  border-radius: 1.5rem;
+  height: 20%;
+  border-radius: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-color: #17A2B8;
+  background-color: #f2a51a;
   color: #212529;
   font-size: 1.8rem;
 }
@@ -237,7 +237,10 @@ header nav {
   }
 }
 .footer {
-  background: lavender;
+  background: #ea6227;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .footer p {
   text-align: center;
@@ -262,7 +265,7 @@ header nav {
   border-radius: 10px;
 }
 .home .inverse-content {
-  background-color: cyan;
+  background-color: #342EAD;
   border-radius: 10px;
   padding-bottom: 30px;
 }
@@ -283,14 +286,15 @@ header nav {
 .home .content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.home .content-section {
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
-.home .content-pick .destination {
+.home .content-section .destination {
   width: 30%;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  display: flex;
   text-align: center;
 }
