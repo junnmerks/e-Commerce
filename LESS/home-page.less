@@ -6,6 +6,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    p {
+      text-align: center;
+    }
+
     .text-content {
       padding-top: 7%;
       width: 48%;
@@ -18,11 +22,37 @@
 
       img {
         border-radius: 10px;
+
+        p {
+          text-align: center;
+        }
+
+        .btn-read {
+          display: none;
+        }
+
+        .read {
+          display: none;
+        }
       }
     }
   }
 }
 
+.developer {
+  padding: 10%;
+  justify-content: space-around;
+
+  .image-content-dev {
+    width: 15%;
+    background-color: floralwhite;
+    .displayflex(center,wrap,space-around);
+    flex-direction: column;
+  }
+  p {
+    text-align: center;
+  }
+}
 .inverse-content {
   background-color: @blue;
   border-radius: 10px;

@@ -137,14 +137,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -173,6 +173,7 @@ img {
 }
 .online-trade {
   width: 100%;
+  height: auto;
   margin: auto;
 }
 .welcome {
@@ -183,6 +184,17 @@ img {
 .header {
   width: 100%;
   margin: auto;
+}
+.image-content-dev {
+  max-width: 1000px;
+  width: 20%;
+  height: auto;
+}
+.image-content-dev img {
+  border-radius: 10px;
+}
+.image-content-dev p {
+  font-size: 2rem;
 }
 .btn {
   width: 100%;
@@ -254,6 +266,9 @@ header .header a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.home .content-section p {
+  text-align: center;
+}
 .home .content-section .text-content {
   padding-top: 7%;
   width: 48%;
@@ -265,6 +280,31 @@ header .header a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+.home .content-section .img-content img p {
+  text-align: center;
+}
+.home .content-section .img-content img .btn-read {
+  display: none;
+}
+.home .content-section .img-content img .read {
+  display: none;
+}
+.developer {
+  padding: 10%;
+  justify-content: space-around;
+}
+.developer .image-content-dev {
+  width: 15%;
+  background-color: floralwhite;
+  display: flex;
+  align-items: center;
+  flex-direction: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.developer p {
+  text-align: center;
 }
 .inverse-content {
   background-color: #342EAD;
@@ -303,6 +343,7 @@ header .header a {
     background-color: pink;
   }
   .content-section .text-content {
+    align-items: center;
     width: 48%;
     margin: 5% 5%;
     padding-left: 20%;
