@@ -249,11 +249,13 @@ header .header a {
 }
 .home .content-section {
   margin: 30px 0;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .home .content-section .text-content {
+  padding-top: 7%;
   width: 48%;
   padding-right: 1%;
 }
@@ -283,17 +285,22 @@ header .header a {
   background-color: #342EAD;
   border-radius: 10px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: wrap;
+  justify-content: space-around;
 }
-.bottom-content .displayflex(center,wrap,space-around) h2 {
+.bottom-content h2 {
   text-align: center;
   padding: 2rem;
 }
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: pink;
   }
   .content-section .text-content {
     width: 48%;
@@ -304,6 +311,9 @@ header .header a {
   .content-section .text-content h2 {
     text-align: center;
   }
+  .content-section .text-content .p2 {
+    display: none;
+  }
   .content-section .img-content {
     width: 48%;
     padding-left: 1%;
@@ -312,20 +322,25 @@ header .header a {
     border-radius: 10px;
   }
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .content-section {
     margin: 30px 0;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-direction: column;
+    background-color: red;
   }
   .content-section .text-content {
+    justify-content: center;
     width: 48%;
     padding-left: 20%;
     padding-right: 1%;
   }
   .content-section .text-content h2 {
     text-align: center;
+    font-size: 3rem;
+  }
+  .content-section .text-content .p2 {
+    display: none;
   }
   .content-section .img-content {
     width: 48%;
