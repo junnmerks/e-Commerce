@@ -177,12 +177,13 @@ img {
   margin: auto;
 }
 .welcome {
-  max-width: 1000px;
-  width: 100%;
+  max-width: auto;
   margin: 0 auto;
+  height: 20%;
 }
 .header {
   width: 100%;
+  height: auto;
   margin: auto;
 }
 .image-content-dev {
@@ -193,17 +194,14 @@ img {
 .image-content-dev img {
   border-radius: 10px;
 }
-.image-content-dev p {
-  font-size: 2rem;
-}
 .btn {
-  width: 100%;
+  width: auto%;
   display: flex;
   justify-content: center;
 }
 .btn button {
   width: 15%;
-  height: 20%;
+  height: auto%;
   margin-bottom: 20px;
   border-radius: 2rem;
   text-decoration: none;
@@ -367,14 +365,26 @@ header .header a {
   .content-section {
     margin: 30px 0;
     display: flex;
+    flex-wrap: wrap-reverse;
     flex-direction: column;
     background-color: red;
+  }
+  .content-section .developer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content-section .developer .image-content-dev {
+    width: 50%;
+    justify-content: center;
   }
   .content-section .text-content {
     justify-content: center;
     width: 48%;
     padding-left: 20%;
     padding-right: 1%;
+  }
+  .content-section .text-content .btn .read {
+    width: auto;
   }
   .content-section .text-content h2 {
     text-align: center;
