@@ -200,14 +200,14 @@ img {
   justify-content: center;
 }
 .btn button {
-  width: 15%;
+  width: auto%;
   height: auto;
   margin-bottom: 20px;
   border-radius: 2rem;
   text-decoration: none;
   background-color: #f2a51a;
   color: #212529;
-  font-size: 3rem;
+  font-size: 1.7rem;
 }
 .header {
   background-color: #342EAD;
@@ -261,11 +261,13 @@ img {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  border-radius: 10px;
 }
 .content-section p {
   text-align: center;
 }
 .content-section .text-content {
+  padding-top: 7%;
   width: 48%;
   padding-right: 1%;
 }
@@ -345,14 +347,20 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: pink;
+    flex-direction: column-reverse;
+    background-color: lightgrey;
   }
   .content-section .text-content {
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
     align-items: center;
-    width: 48%;
-    margin: 5% 5%;
-    padding-left: 20%;
-    padding-right: 1%;
+  }
+  .content-section .text-content .btn-read {
+    display: inline;
+    border-radius: inherit;
   }
   .content-section .text-content h2 {
     text-align: center;
@@ -363,10 +371,40 @@ img {
   .content-section .img-content {
     width: 48%;
     padding-left: 1%;
+    padding-top: 4%;
   }
   .content-section .img-content img {
     border-radius: 10px;
   }
+  .inverse-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .inverse-content .text-content {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .inverse-content .text-content h2 {
+    color: black;
+  }
+  .inverse-content .text-content p {
+    color: black;
+  }
+}
+.bottom-content {
+  background-color: lightgray;
+}
+.bottom-content h2 {
+  color: black;
+}
+.bottom-content p {
+  display: none;
 }
 @media only screen and (max-width: 500px) {
   .header a {
