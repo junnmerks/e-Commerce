@@ -78,6 +78,9 @@
 //*phone*//
 
 @media only screen and (max-width: 500px) {
+  .p1 {
+    display: none;
+  }
   .header {
     a {
       font-size: 0.8rem;
@@ -88,6 +91,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h2 {
+      font-size: 1.5rem;
+    }
 
     .developer {
       flex-direction: column;
@@ -122,6 +129,16 @@
       }
     }
   }
+
+  .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+
+    img {
+      border: 0;
+    }
+  }
+
   .img-content {
     display: flex;
     justify-content: center;
@@ -132,6 +149,7 @@
     img {
       align-self: center;
       border-radius: 10px;
+      padding-bottom: 5%;
     }
   }
 }

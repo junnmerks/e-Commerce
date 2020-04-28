@@ -407,6 +407,9 @@ img {
   display: none;
 }
 @media only screen and (max-width: 500px) {
+  .p1 {
+    display: none;
+  }
   .header a {
     font-size: 0.8rem;
   }
@@ -415,6 +418,9 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .content-section h2 {
+    font-size: 1.5rem;
   }
   .content-section .developer {
     flex-direction: column;
@@ -444,6 +450,13 @@ img {
   .content-section .text-content .p2 {
     display: none;
   }
+  .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .inverse-content img {
+    border: 0;
+  }
   .img-content {
     display: flex;
     justify-content: center;
@@ -454,5 +467,6 @@ img {
   .img-content img {
     align-self: center;
     border-radius: 10px;
+    padding-bottom: 5%;
   }
 }
