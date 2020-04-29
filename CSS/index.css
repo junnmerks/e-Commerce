@@ -200,7 +200,7 @@ img {
   justify-content: center;
 }
 .btn button {
-  width: auto%;
+  width: auto;
   height: auto;
   margin-bottom: 20px;
   border-radius: 2rem;
@@ -338,6 +338,7 @@ img {
   color: whitesmoke;
 }
 .bottom-content p {
+  padding: 0 10% 2% 10%;
   text-align: center;
   color: aqua;
 }
@@ -348,7 +349,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column-reverse;
-    background-color: lightgrey;
+    background-color: lightgray;
   }
   .content-section .text-content {
     padding: 2% 0;
@@ -396,15 +397,16 @@ img {
   .inverse-content .text-content p {
     color: black;
   }
-}
-.bottom-content {
-  background-color: lightgray;
-}
-.bottom-content h2 {
-  color: black;
-}
-.bottom-content p {
-  display: none;
+  .bottom-content {
+    background-color: lightgray;
+  }
+  .bottom-content h2 {
+    color: black;
+  }
+  .bottom-content p {
+    padding: 0 10%;
+    display: none;
+  }
 }
 @media only screen and (max-width: 500px) {
   .p1 {
